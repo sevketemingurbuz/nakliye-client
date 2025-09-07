@@ -1,0 +1,9 @@
+.dropdownItem:hover {
+  background-color: #198754;
+  color: white;
+}
+
+.nav-link.active {
+  font-weight: 600;
+  color: #198754 !important;
+}
