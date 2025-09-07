@@ -26,8 +26,6 @@ const ContactForm = () => {
     try {
 
       const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
-
-      process.env.NEXT_PUBLIC_API_BASE_URL= "https://nakliye.onrender.com"
       
       const response = await fetch(`${apiUrl}/mail/send`, {
         method: 'POST',
