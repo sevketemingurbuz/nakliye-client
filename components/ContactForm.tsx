@@ -25,7 +25,7 @@ const ContactForm = () => {
 
     try {
  
-      const endpointUrl = 'http://localhost:8080/mail/send'; 
+      const endpointUrl = 'http://nakliye.onrender.com/mail/send'; 
       
       const response = await fetch(endpointUrl, {
         method: 'POST',
