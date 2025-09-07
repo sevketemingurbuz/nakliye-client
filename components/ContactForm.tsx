@@ -24,10 +24,12 @@ const ContactForm = () => {
     setStatus('');
 
     try {
- 
-      const endpointUrl = 'http://nakliye.onrender.com/mail/send'; 
+
+      const apiUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
+
+      process.env.NEXT_PUBLIC_API_BASE_URL= "https://nakliye.onrender.com"
       
-      const response = await fetch(endpointUrl, {
+      const response = await fetch(`${apiUrl}/mail/send`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
